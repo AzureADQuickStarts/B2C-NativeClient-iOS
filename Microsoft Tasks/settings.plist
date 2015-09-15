@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>authority</key>
-	<string>https://login.microsoftonline.com/hypercubeb2c.onmicrosoft.com/</string>
+	<string>https://login.microsoftonline.com/b2ctesting.onmicrosoft.com/</string>
 	<key>clientId</key>
-	<string>7bf688ce-8139-4ca8-9391-02fdb6f86d67</string>
+	<string>52688c65-e70f-4d3f-b2ab-ea7005b76504</string>
 	<key>scopes</key>
 	<array>
-		<string>7bf688ce-8139-4ca8-9391-02fdb6f86d67</string>
+		<string>52688c65-e70f-4d3f-b2ab-ea7005b76504</string>
 	</array>
 	<key>additionalScopes</key>
 	<array>
@@ -20,10 +20,12 @@
 	<string>test@hypercubeb2c.onmicrosoft.com</string>
 	<key>taskWebAPI</key>
 	<string>https://kidventus.net/todoserver/tasks</string>
-	<key>signUpPolicyId</key>
-	<string>B2C_1_public_signup</string>
-	<key>signInPolicyId</key>
-	<string>B2C_1_public_signin</string>
+	<key>emailSignUpPolicyId</key>
+	<string>B2C_1_todo_email_signup</string>
+	<key>faceBookSignInPolicyId</key>
+	<string>B2C_1_1000</string>
+	<key>emailSignInPolicyId</key>
+	<string>B2C_1_todo_email_signin</string>
 	<key>fullScreen</key>
 	<false/>
 	<key>showClaims</key>

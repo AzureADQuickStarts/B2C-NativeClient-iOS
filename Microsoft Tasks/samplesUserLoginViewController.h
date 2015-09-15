@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface samplesUserLoginViewController : UIViewController
-- (IBAction)signInPressed:(id)sender;
-- (IBAction)signUpPressed:(id)sender;
+- (IBAction)signInFBPressed:(id)sender;
+- (IBAction)signInEmailPressed:(id)sender;
+- (IBAction)signUpEmailPressed:(id)sender;
 
 @end

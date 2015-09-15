@@ -4,26 +4,7 @@
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
 #import "ADALiOS/ADAuthenticationResult.h"
-
-@interface SamplesApplicationData : NSObject
-
-@property (strong) ADTokenCacheStoreItem *userItem;
-@property (strong) NSString* taskWebApiUrlString;
-@property (strong) NSString* authority;
-@property (strong) NSString* clientId;
-@property (strong) NSString* resourceId;
-@property NSArray* scopes;
-@property NSArray* additionalScopes;
-@property (strong) NSString* redirectUriString;
-@property (strong) NSString* correlationId;
-@property (strong) NSString* signInPolicyId;
-@property (strong) NSString* signUpPolicyId;
-@property BOOL fullScreen;
-@property BOOL showClaims;
-
-+(id) getInstance;
-
-@end
+#import "samplesApplicationData.h"
 
 
 @interface SamplesAppSettingsController ()
@@ -35,8 +16,10 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *fullScreenSwitch;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *showClaimsSwitch;
 @property (weak, nonatomic) IBOutlet UITextField *correlationIdLabel;
-@property (weak, nonatomic) IBOutlet UITextField *signInPolicyLabel;
-@property (weak, nonatomic) IBOutlet UITextField *signUpPolicyLabel;
+@property (weak, nonatomic) IBOutlet UITextField *faceBookSignInPolicyId;
+@property (weak, nonatomic) IBOutlet UITextField *emailSignInPolicyId;
+@property (weak, nonatomic) IBOutlet UITextField *emailSignUpPolicyId;
+@property (weak, nonatomic) IBOutlet UITextField *firstScope;
 
 @end
 
@@ -45,17 +28,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
     SamplesApplicationData* data = [SamplesApplicationData getInstance];
     self->_authorityLabel.text = data.authority;
+    self->_redirectUriLabel.text = data.redirectUriString;
     self->_clientIdLabel.text = data.clientId;
     self->_resourceLabel.text = data.resourceId;
-    self->_redirectUriLabel.text = data.redirectUriString;
     self->_correlationIdLabel.text = data.correlationId;
-    self->_signInPolicyLabel.text = data.signInPolicyId;
-    self->_signUpPolicyLabel.text = data.signUpPolicyId;
+    self->_faceBookSignInPolicyId.text = data.faceBookSignInPolicyId;
+    self->_emailSignInPolicyId.text = data.emailSignInPolicyId;
+    self->_emailSignUpPolicyId.text = data.emailSignUpPolicyId;
+    self->_firstScope.text = [data.scopes objectAtIndex:0];
     [self configureControl:self->_fullScreenSwitch forValue:data.fullScreen];
     [self configureControl:self->_showClaimsSwitch forValue:data.showClaims];
+    
     
 }
 
@@ -70,8 +57,10 @@
     data.fullScreen = [self isEnabled:self->_fullScreenSwitch];
     data.correlationId = self->_correlationIdLabel.text;
     data.showClaims = [self isEnabled:self->_showClaimsSwitch];
-    data.signInPolicyId = self->_signInPolicyLabel.text;
-    data.signUpPolicyId = self->_signUpPolicyLabel.text;
+    data.faceBookSignInPolicyId = self->_faceBookSignInPolicyId.text;
+    data.emailSignInPolicyId = self->_emailSignInPolicyId.text;
+    data.emailSignUpPolicyId = self->_emailSignUpPolicyId.text;
+    [data.scopes replaceObjectAtIndex:0 withObject:self->_firstScope.text];
     [self cancelPressed:sender];
 }
 
