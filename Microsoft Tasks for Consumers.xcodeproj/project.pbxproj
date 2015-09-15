@@ -169,9 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				FB5123F51BA89B28009BF406 /* UI Code - do not touch */,
-				971963C41A6845950026BC5F /* Microsoft Tasks.entitlements */,
-				FB3F00EA18C7016200173598 /* samplesAppDelegate.h */,
-				FB3F00EB18C7016200173598 /* samplesAppDelegate.m */,
 				FB3F00F018C7016200173598 /* Images.xcassets */,
 				FB3F00E218C7016200173598 /* Supporting Files */,
 				FB3F011D18C713E600173598 /* samplesTaskItem.h */,
@@ -182,7 +179,7 @@
 				97C15AF61A280BEF004A0419 /* SamplesApplicationData.m */,
 				B8D009D11ACDC37500C842CC /* samplesPolicyData.m */,
 				B8D009D31ACDC39300C842CC /* samplesPolicyData.h */,
-				B8D009DA1ACDF0B300C842CC /* Policy.xcdatamodeld */,
+				FB33714818CA5B7E00234804 /* settings.plist */,
 			);
 			path = "Microsoft Tasks";
 			sourceTree = "<group>";
@@ -190,10 +187,11 @@
 		FB3F00E218C7016200173598 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				971963C41A6845950026BC5F /* Microsoft Tasks.entitlements */,
 				FB3F00E318C7016200173598 /* Microsoft Tasks-Info.plist */,
 				FB3F00E718C7016200173598 /* main.m */,
 				FB3F00E918C7016200173598 /* Microsoft Tasks-Prefix.pch */,
-				FB33714818CA5B7E00234804 /* settings.plist */,
+				B8D009DA1ACDF0B300C842CC /* Policy.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +199,8 @@
 		FB5123F51BA89B28009BF406 /* UI Code - do not touch */ = {
 			isa = PBXGroup;
 			children = (
+				FB3F00EA18C7016200173598 /* samplesAppDelegate.h */,
+				FB3F00EB18C7016200173598 /* samplesAppDelegate.m */,
 				B8D009CB1ACDBD3A00C842CC /* InfoPlist.strings */,
 				B81583EC1AD318CB00CCA892 /* NSDictionary+UrlEncoding.h */,
 				FB538F371BA39881003ABD9A /* signin-email.png */,

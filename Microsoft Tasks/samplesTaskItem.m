@@ -6,8 +6,4 @@
 //  Copyright (c) 2014 Microsoft. All rights reserved.
 //
 
-#import "samplesTaskItem.h"
-
-@implementation samplesTaskItem
-
-@end
+// START ADDING CODE FROM THE QUICKSTART HERE
