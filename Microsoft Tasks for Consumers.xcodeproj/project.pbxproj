@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,6 @@
 		FB3F00DC18C7016200173598 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3F00DB18C7016200173598 /* CoreGraphics.framework */; };
 		FB3F00DE18C7016200173598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3F00DD18C7016200173598 /* UIKit.framework */; };
 		FB3F00E018C7016200173598 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3F00DF18C7016200173598 /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		FB3F00E618C7016200173598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB3F00E418C7016200173598 /* InfoPlist.strings */; };
 		FB3F00E818C7016200173598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F00E718C7016200173598 /* main.m */; };
 		FB3F00EC18C7016200173598 /* samplesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F00EB18C7016200173598 /* samplesAppDelegate.m */; };
 		FB3F00EF18C7016200173598 /* Microsoft_Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB3F00ED18C7016200173598 /* Microsoft_Tasks.xcdatamodeld */; };
@@ -37,6 +36,11 @@
 		FB3F011F18C713E600173598 /* samplesTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F011E18C713E600173598 /* samplesTaskItem.m */; };
 		FB4C7C1A1BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		FB4C7C1B1BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		FB538F2D1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2C1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		FB538F301BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2F1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		FB538F361BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB538F351BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg */; settings = {ASSET_TAGS = (); }; };
+		FB538F381BA39882003ABD9A /* signin-email.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F371BA39881003ABD9A /* signin-email.png */; settings = {ASSET_TAGS = (); }; };
+		FB538F3A1BA39887003ABD9A /* signin-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F391BA39887003ABD9A /* signin-fb.png */; settings = {ASSET_TAGS = (); }; };
 		FB6ABBF91B9E807500AF7868 /* libADALiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6ABBF81B9E807500AF7868 /* libADALiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -71,13 +75,12 @@
 		FB3BF21E18D0106C007E645E /* samplesWebAPIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplesWebAPIConnector.h; sourceTree = "<group>"; };
 		FB3BF21F18D0106C007E645E /* samplesWebAPIConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samplesWebAPIConnector.m; sourceTree = "<group>"; };
 		FB3BF23218D03A88007E645E /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FB3F00D618C7016200173598 /* Microsoft Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microsoft Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3F00D618C7016200173598 /* Microsoft Tasks for Consumers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microsoft Tasks for Consumers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3F00D918C7016200173598 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB3F00DB18C7016200173598 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FB3F00DD18C7016200173598 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FB3F00DF18C7016200173598 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FB3F00E318C7016200173598 /* Microsoft Tasks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Microsoft Tasks-Info.plist"; sourceTree = "<group>"; };
-		FB3F00E518C7016200173598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB3F00E718C7016200173598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB3F00E918C7016200173598 /* Microsoft Tasks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Microsoft Tasks-Prefix.pch"; sourceTree = "<group>"; };
 		FB3F00EA18C7016200173598 /* samplesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = samplesAppDelegate.h; sourceTree = "<group>"; };
@@ -85,9 +88,6 @@
 		FB3F00EE18C7016200173598 /* Microsoft_Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Microsoft_Tasks.xcdatamodel; sourceTree = "<group>"; };
 		FB3F00F018C7016200173598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB3F00F718C7016200173598 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FB3F010018C7016200173598 /* Microsoft TasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Microsoft TasksTests-Info.plist"; sourceTree = "<group>"; };
-		FB3F010218C7016200173598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FB3F010418C7016200173598 /* Microsoft_TasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Microsoft_TasksTests.m; sourceTree = "<group>"; };
 		FB3F011418C7092700173598 /* sampleAddTaskItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sampleAddTaskItemViewController.h; sourceTree = "<group>"; };
 		FB3F011518C7092700173598 /* sampleAddTaskItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sampleAddTaskItemViewController.m; sourceTree = "<group>"; };
 		FB3F011A18C709FE00173598 /* samplesTaskListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplesTaskListTableViewController.h; sourceTree = "<group>"; };
@@ -96,7 +96,15 @@
 		FB3F011E18C713E600173598 /* samplesTaskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samplesTaskItem.m; sourceTree = "<group>"; };
 		FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ADAL_iPhone_Storyboard.storyboard; sourceTree = "<group>"; };
 		FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ADAL_iPad_Storyboard.storyboard; sourceTree = "<group>"; };
+		FB538F2B1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		FB538F2C1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		FB538F2E1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		FB538F2F1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		FB538F351BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10637393134_3be20f8467_k.jpg; sourceTree = "<group>"; };
+		FB538F371BA39881003ABD9A /* signin-email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signin-email.png"; sourceTree = "<group>"; };
+		FB538F391BA39887003ABD9A /* signin-fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signin-fb.png"; sourceTree = "<group>"; };
 		FB6ABBF81B9E807500AF7868 /* libADALiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libADALiOS.a; path = "../../SDKs/azure-activedirectory-library-for-objc/ADALiOS/build/Debug-iphoneos/libADALiOS.a"; sourceTree = "<group>"; };
+		FB7362EB1BA758820048374F /* samplesApplicationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplesApplicationData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,18 +133,10 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FB381FF118D1998400BF7374 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
-			sourceTree = "<group>";
-		};
 		FB3F00CD18C7016200173598 = {
 			isa = PBXGroup;
 			children = (
 				FB3F00E118C7016200173598 /* Microsoft Tasks */,
-				FB3F00FE18C7016200173598 /* Microsoft TasksTests */,
 				FB3F00D818C7016200173598 /* Frameworks */,
 				FB3F00D718C7016200173598 /* Products */,
 				6CD3672F3D33AC186309EB84 /* Pods */,
@@ -146,7 +146,7 @@
 		FB3F00D718C7016200173598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB3F00D618C7016200173598 /* Microsoft Tasks.app */,
+				FB3F00D618C7016200173598 /* Microsoft Tasks for Consumers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,46 +168,21 @@
 		FB3F00E118C7016200173598 /* Microsoft Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */,
-				FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */,
-				B8D009CB1ACDBD3A00C842CC /* InfoPlist.strings */,
+				FB5123F51BA89B28009BF406 /* UI Code - do not touch */,
 				971963C41A6845950026BC5F /* Microsoft Tasks.entitlements */,
-				FB381FF118D1998400BF7374 /* iPad */,
-				FB3BF23218D03A88007E645E /* Main_iPhone.storyboard */,
-				FB3F00E418C7016200173598 /* InfoPlist.strings */,
 				FB3F00EA18C7016200173598 /* samplesAppDelegate.h */,
 				FB3F00EB18C7016200173598 /* samplesAppDelegate.m */,
 				FB3F00F018C7016200173598 /* Images.xcassets */,
-				FB3F00ED18C7016200173598 /* Microsoft_Tasks.xcdatamodeld */,
 				FB3F00E218C7016200173598 /* Supporting Files */,
-				FB3F011418C7092700173598 /* sampleAddTaskItemViewController.h */,
-				FB3F011518C7092700173598 /* sampleAddTaskItemViewController.m */,
-				FB3F011A18C709FE00173598 /* samplesTaskListTableViewController.h */,
-				FB3F011B18C709FE00173598 /* samplesTaskListTableViewController.m */,
 				FB3F011D18C713E600173598 /* samplesTaskItem.h */,
 				FB3F011E18C713E600173598 /* samplesTaskItem.m */,
 				FB3BF21E18D0106C007E645E /* samplesWebAPIConnector.h */,
 				FB3BF21F18D0106C007E645E /* samplesWebAPIConnector.m */,
-				97C15AF01A27FAD6004A0419 /* SamplesSelectUserViewController.h */,
-				97C15AF31A27FDF0004A0419 /* SamplesSelectUserViewController.m */,
+				FB7362EB1BA758820048374F /* samplesApplicationData.h */,
 				97C15AF61A280BEF004A0419 /* SamplesApplicationData.m */,
-				97C15AF81A29C9E3004A0419 /* SamplesAppSettingsController.h */,
-				97C15AF91A29C9F3004A0419 /* SamplesAppSettingsController.m */,
 				B8D009D11ACDC37500C842CC /* samplesPolicyData.m */,
 				B8D009D31ACDC39300C842CC /* samplesPolicyData.h */,
-				B8D009D41ACDD8A400C842CC /* samplesPolicyTableViewController.h */,
-				B8D009D51ACDD8A400C842CC /* samplesPolicyTableViewController.m */,
-				B8D009D71ACDDF3B00C842CC /* samplesAddPolicyViewController.h */,
-				B8D009D81ACDDF3B00C842CC /* samplesAddPolicyViewController.m */,
 				B8D009DA1ACDF0B300C842CC /* Policy.xcdatamodeld */,
-				B8D00A161ACE085700C842CC /* samplesUsePolicyTableViewController.h */,
-				B8D00A171ACE085700C842CC /* samplesUsePolicyTableViewController.m */,
-				B8D00A1D1ACE4DF800C842CC /* samplesUseViewController.h */,
-				B8D00A1E1ACE4DF800C842CC /* samplesUseViewController.m */,
-				B81583EC1AD318CB00CCA892 /* NSDictionary+UrlEncoding.h */,
-				B81583ED1AD318CB00CCA892 /* NSDictionary+UrlEncoding.m */,
-				B8B06D081AE581E900A4B04A /* samplesUserLoginViewController.h */,
-				B8B06D091AE581E900A4B04A /* samplesUserLoginViewController.m */,
 			);
 			path = "Microsoft Tasks";
 			sourceTree = "<group>";
@@ -223,30 +198,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FB3F00FE18C7016200173598 /* Microsoft TasksTests */ = {
+		FB5123F51BA89B28009BF406 /* UI Code - do not touch */ = {
 			isa = PBXGroup;
 			children = (
-				FB3F010418C7016200173598 /* Microsoft_TasksTests.m */,
-				FB3F00FF18C7016200173598 /* Supporting Files */,
+				B8D009CB1ACDBD3A00C842CC /* InfoPlist.strings */,
+				B81583EC1AD318CB00CCA892 /* NSDictionary+UrlEncoding.h */,
+				FB538F371BA39881003ABD9A /* signin-email.png */,
+				FB538F391BA39887003ABD9A /* signin-fb.png */,
+				FB538F351BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg */,
+				FB538F2E1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				FB538F2F1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				FB538F2B1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.h */,
+				FB538F2C1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m */,
+				FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */,
+				FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */,
+				FB3F011418C7092700173598 /* sampleAddTaskItemViewController.h */,
+				FB3F011518C7092700173598 /* sampleAddTaskItemViewController.m */,
+				FB3F011A18C709FE00173598 /* samplesTaskListTableViewController.h */,
+				FB3F011B18C709FE00173598 /* samplesTaskListTableViewController.m */,
+				97C15AF01A27FAD6004A0419 /* SamplesSelectUserViewController.h */,
+				97C15AF31A27FDF0004A0419 /* SamplesSelectUserViewController.m */,
+				97C15AF81A29C9E3004A0419 /* SamplesAppSettingsController.h */,
+				97C15AF91A29C9F3004A0419 /* SamplesAppSettingsController.m */,
+				B8D009D41ACDD8A400C842CC /* samplesPolicyTableViewController.h */,
+				B8D009D51ACDD8A400C842CC /* samplesPolicyTableViewController.m */,
+				B8D009D71ACDDF3B00C842CC /* samplesAddPolicyViewController.h */,
+				B8D009D81ACDDF3B00C842CC /* samplesAddPolicyViewController.m */,
+				B8D00A161ACE085700C842CC /* samplesUsePolicyTableViewController.h */,
+				B8D00A171ACE085700C842CC /* samplesUsePolicyTableViewController.m */,
+				B8D00A1D1ACE4DF800C842CC /* samplesUseViewController.h */,
+				B8D00A1E1ACE4DF800C842CC /* samplesUseViewController.m */,
+				B8B06D081AE581E900A4B04A /* samplesUserLoginViewController.h */,
+				B8B06D091AE581E900A4B04A /* samplesUserLoginViewController.m */,
+				B81583ED1AD318CB00CCA892 /* NSDictionary+UrlEncoding.m */,
+				FB3F00ED18C7016200173598 /* Microsoft_Tasks.xcdatamodeld */,
+				FB3BF23218D03A88007E645E /* Main_iPhone.storyboard */,
 			);
-			path = "Microsoft TasksTests";
-			sourceTree = "<group>";
-		};
-		FB3F00FF18C7016200173598 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FB3F010018C7016200173598 /* Microsoft TasksTests-Info.plist */,
-				FB3F010118C7016200173598 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = "UI Code - do not touch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FB3F00D518C7016200173598 /* Microsoft Tasks */ = {
+		FB3F00D518C7016200173598 /* Microsoft Tasks for Consumers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB3F010818C7016200173598 /* Build configuration list for PBXNativeTarget "Microsoft Tasks" */;
+			buildConfigurationList = FB3F010818C7016200173598 /* Build configuration list for PBXNativeTarget "Microsoft Tasks for Consumers" */;
 			buildPhases = (
 				82DDE857AAEB726A91F72F51 /* Check Pods Manifest.lock */,
 				FB3F00D218C7016200173598 /* Sources */,
@@ -258,9 +254,9 @@
 			);
 			dependencies = (
 			);
-			name = "Microsoft Tasks";
+			name = "Microsoft Tasks for Consumers";
 			productName = "Microsoft Tasks";
-			productReference = FB3F00D618C7016200173598 /* Microsoft Tasks.app */;
+			productReference = FB3F00D618C7016200173598 /* Microsoft Tasks for Consumers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,12 +275,15 @@
 							com.apple.Keychain = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 0;
+							};
 						};
 					};
 				};
 			};
-			buildConfigurationList = FB3F00D118C7016200173598 /* Build configuration list for PBXProject "Microsoft Tasks B2C" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = FB3F00D118C7016200173598 /* Build configuration list for PBXProject "Microsoft Tasks for Consumers" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -295,7 +294,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FB3F00D518C7016200173598 /* Microsoft Tasks */,
+				FB3F00D518C7016200173598 /* Microsoft Tasks for Consumers */,
 			);
 		};
 /* End PBXProject section */
@@ -306,12 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D009CC1ACDBD3A00C842CC /* InfoPlist.strings in Resources */,
+				FB538F361BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg in Resources */,
 				FB3BF23518D03A88007E645E /* Main_iPhone.storyboard in Resources */,
-				FB3F00E618C7016200173598 /* InfoPlist.strings in Resources */,
 				FB3F00F118C7016200173598 /* Images.xcassets in Resources */,
+				FB538F3A1BA39887003ABD9A /* signin-fb.png in Resources */,
 				FB4C7C1A1BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard in Resources */,
 				FB4C7C1B1BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard in Resources */,
 				FB33714918CA5B7E00234804 /* settings.plist in Resources */,
+				FB538F381BA39882003ABD9A /* signin-email.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +364,14 @@
 				FB3F011C18C709FE00173598 /* samplesTaskListTableViewController.m in Sources */,
 				B8D00A1F1ACE4DF800C842CC /* samplesUseViewController.m in Sources */,
 				B8D009DC1ACDF0B300C842CC /* Policy.xcdatamodeld in Sources */,
+				FB538F301BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				FB3F00EC18C7016200173598 /* samplesAppDelegate.m in Sources */,
 				B8B06D0A1AE581E900A4B04A /* samplesUserLoginViewController.m in Sources */,
 				B8D009D21ACDC37500C842CC /* samplesPolicyData.m in Sources */,
 				B8D009D61ACDD8A400C842CC /* samplesPolicyTableViewController.m in Sources */,
 				97C15AF71A280BEF004A0419 /* SamplesApplicationData.m in Sources */,
 				FB3BF22018D0106C007E645E /* samplesWebAPIConnector.m in Sources */,
+				FB538F2D1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m in Sources */,
 				97C15AF41A27FDF0004A0419 /* SamplesSelectUserViewController.m in Sources */,
 				FB3F00E818C7016200173598 /* main.m in Sources */,
 				B8D009D91ACDDF3B00C842CC /* samplesAddPolicyViewController.m in Sources */,
@@ -376,25 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FB3F00E418C7016200173598 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB3F00E518C7016200173598 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FB3F010118C7016200173598 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB3F010218C7016200173598 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FB3F010618C7016200173598 /* Debug */ = {
@@ -484,13 +468,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Microsoft Tasks/Microsoft Tasks-Prefix.pch";
 				INFOPLIST_FILE = "Microsoft Tasks/Microsoft Tasks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.windowsazure.activedirectory.samples.microsofttasks.bc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microm.microsoft.windowsazure.activedirectory.samples.microsofttasks.b2c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -515,13 +499,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Microsoft Tasks/Microsoft Tasks-Prefix.pch";
 				INFOPLIST_FILE = "Microsoft Tasks/Microsoft Tasks-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.windowsazure.activedirectory.samples.microsofttasks.bc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microm.microsoft.windowsazure.activedirectory.samples.microsofttasks.b2c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -533,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FB3F00D118C7016200173598 /* Build configuration list for PBXProject "Microsoft Tasks B2C" */ = {
+		FB3F00D118C7016200173598 /* Build configuration list for PBXProject "Microsoft Tasks for Consumers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB3F010618C7016200173598 /* Debug */,
@@ -542,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB3F010818C7016200173598 /* Build configuration list for PBXNativeTarget "Microsoft Tasks" */ = {
+		FB3F010818C7016200173598 /* Build configuration list for PBXNativeTarget "Microsoft Tasks for Consumers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FB3F010918C7016200173598 /* Debug */,

@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-link_with ['Microsoft Tasks']
-xcodeproj 'Microsoft Tasks B2C'
+link_with ['Microsoft Tasks for Consumers']
+xcodeproj 'Microsoft Tasks for Consumers'
 
-pod 'ADALiOS', :git => 'https://github.com/AzureAD/azure-activedirectory-library-for-objc', :branch => ‘real_b2c’
+pod 'ADALiOS', :git => 'https://github.com/AzureAD/azure-activedirectory-library-for-objc', :branch => ‘convergence-dev’

@@ -1,4 +1,4 @@
-#Microsft Azure Active Directory Native Client for iOS (iPhone)
+#Microsft Azure Active Directory Native Client for iOS B2C (iPhone)
 
 **NOTE regarding iOS 9:**
 
@@ -17,7 +17,7 @@ Getting started with the sample is easy. It is configured to run out of the box 
 
 ### Step 1: Download the iOS B2C Native Client Sample code
 
-* `$ git clone git@github.com:AzureADSamples/NativeClient-iOS-B2C.git`
+* `$ git clone git@github.com:AzureADSamples/B2C-NativeClient-iOS.git`
 
 ### Step 2: Download Cocoapods (if you don't already have it)
 
@@ -87,7 +87,7 @@ Replace the information in the plist file with your settings.
 
 ##### NOTE
 
-The current defaults are set up to work with our [Azure Active Directory Sample REST API Service for Node.js](https://github.com/AzureADSamples/WebAPI-Nodejs). You will need to specify the clientID of your Web API, however. If you are running your own API, you will need to update the endpoints as required.
+The current defaults are set up to work with our [Azure Active Directory Sample REST API Service for Node.js B2C](https://github.com/AzureADSamples/B2C-WebAPI-Nodejs). You will need to specify the clientID of your Web API, however. If you are running your own API, you will need to update the endpoints as required.
 
 
 

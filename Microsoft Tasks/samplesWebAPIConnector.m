@@ -18,26 +18,7 @@
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
 #import "ADALiOS/ADAuthenticationResult.h"
-
-@interface SamplesApplicationData : NSObject
-
-@property (strong) ADTokenCacheStoreItem *userItem;
-@property (strong) NSString* taskWebApiUrlString;
-@property (strong) NSString* authority;
-@property (strong) NSString* clientId;
-@property (strong) NSString* resourceId;
-@property NSArray* scopes;
-@property NSArray* additionalScopes;
-@property (strong) NSString* redirectUriString;
-@property (strong) NSString* correlationId;
-@property (strong) NSString* signInPolicyId;
-@property (strong) NSString* signUpPolicyId;
-@property BOOL fullScreen;
-@property BOOL showClaims;
-
-+(id) getInstance;
-
-@end
+#import "samplesApplicationData.h"
 
 
 @interface samplesWebAPIConnector ()
@@ -467,10 +448,8 @@ completionBlock:(void (^) (bool, NSError* error)) completionBlock
          parent:(UIViewController*) parent
 completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionBlock
 {
-    if (!loadedApplicationSettings)
-    {
+
         [self readApplicationSettings];
-    }
     
     NSDictionary* params = [self convertPolicyToDictionary:policy];
     

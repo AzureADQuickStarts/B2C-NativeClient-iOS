@@ -2,26 +2,7 @@
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
 #import "ADALiOS/ADAuthenticationResult.h"
-
-@interface SamplesApplicationData : NSObject
-
-@property (strong) ADTokenCacheStoreItem *userItem;
-@property (strong) NSString* taskWebApiUrlString;
-@property (strong) NSString* authority;
-@property (strong) NSString* clientId;
-@property (strong) NSString* resourceId;
-@property NSArray* scopes;
-@property NSArray* additionalScopes;
-@property (strong) NSString* redirectUriString;
-@property (strong) NSString* correlationId;
-@property (strong) NSString* signInPolicyId;
-@property (strong) NSString* signUpPolicyId;
-@property BOOL fullScreen;
-@property BOOL showClaims;
-
-+(id) getInstance;
-
-@end
+#import "SamplesApplicationData.h"
 
 
 @implementation SamplesApplicationData
@@ -41,13 +22,14 @@
         instance.clientId = [dictionary objectForKey:@"clientId"];
         instance.authority = [dictionary objectForKey:@"authority"];
         instance.resourceId = [dictionary objectForKey:@"resourceString"];
-        instance.scopes = [dictionary objectForKey:@"scopes"];
+        instance.scopes = [[NSMutableArray alloc]initWithArray:[dictionary objectForKey:@"scopes"]];
         instance.additionalScopes = [dictionary objectForKey:@"additionalScopes"];
         instance.redirectUriString = [dictionary objectForKey:@"redirectUri"];
         instance.taskWebApiUrlString = [dictionary objectForKey:@"taskWebAPI"];
         instance.correlationId = [dictionary objectForKey:@"correlationId"];
-        instance.signInPolicyId = [dictionary objectForKey:@"signInPolicyId"];
-        instance.signUpPolicyId = [dictionary objectForKey:@"signUpPolicyId"];
+        instance.faceBookSignInPolicyId = [dictionary objectForKey:@"faceBookSignInPolicyId"];
+        instance.emailSignInPolicyId = [dictionary objectForKey:@"emailSignInPolicyId"];
+        instance.emailSignUpPolicyId = [dictionary objectForKey:@"emailSignUpPolicyId"];
         
     });
     
