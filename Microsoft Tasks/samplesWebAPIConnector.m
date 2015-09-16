@@ -448,10 +448,8 @@ completionBlock:(void (^) (bool, NSError* error)) completionBlock
          parent:(UIViewController*) parent
 completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionBlock
 {
-    if (!loadedApplicationSettings)
-    {
+
         [self readApplicationSettings];
-    }
     
     NSDictionary* params = [self convertPolicyToDictionary:policy];
     

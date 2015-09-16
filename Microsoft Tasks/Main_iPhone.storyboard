@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="137" width="320" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9X0-L4-rlV" id="Mnj-4J-S6h">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="41.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -218,9 +218,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Get Started" id="50Q-df-4Zc">
-                        <barButtonItem key="rightBarButtonItem" title="settings" id="oHT-DG-Isr">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="oHT-DG-Isr">
                             <connections>
-                                <segue destination="hf6-a4-gzu" kind="push" id="VF2-0a-cnG"/>
+                                <segue destination="hf6-a4-gzu" kind="push" id="DB3-AS-gES"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -548,6 +548,6 @@
         <image name="signin-fb.png" width="194" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VF2-0a-cnG"/>
+        <segue reference="DB3-AS-gES"/>
     </inferredMetricsTieBreakers>
 </document>
