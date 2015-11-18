@@ -449,11 +449,9 @@ completionBlock:(void (^) (bool, NSError* error)) completionBlock
 completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionBlock
 {
 
-        [self readApplicationSettings];
+    [self readApplicationSettings];
     
-    NSDictionary* params = [self convertPolicyToDictionary:policy];
-    
-    [self getClaimsWithPolicyClearingCache:NO policy:policy params:params parent:parent completionHandler:^(ADProfileInfo* userInfo, NSError* error) {
+    [self getClaimsWithPolicyClearingCache:NO policy:policy params:nil parent:parent completionHandler:^(ADProfileInfo* userInfo, NSError* error) {
         
         if (userInfo == nil)
         {
@@ -502,21 +500,6 @@ completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionB
     
     if (task.itemName){
         [dictionary setValue:task.itemName forKey:@"task"];
-    }
-    
-    return dictionary;
-}
-
-+(NSDictionary*) convertPolicyToDictionary:(samplesPolicyData*)policy
-{
-    NSMutableDictionary* dictionary = [[NSMutableDictionary alloc]init];
-
-    
-    if (policy.policyID){
-        [dictionary setValue:policy.policyID forKey:@"p"];
-       // [dictionary setValue:@"openid" forKey:@"scope"];
-       // [dictionary setValue:UUID forKey:@"nonce"];
-      //  [dictionary setValue:@"query" forKey:@"response_mode"];
     }
     
     return dictionary;
