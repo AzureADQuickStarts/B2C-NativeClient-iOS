@@ -11,9 +11,7 @@
 		<string>7bf688ce-8139-4ca8-9391-02fdb6f86d67</string>
 	</array>
 	<key>additionalScopes</key>
-	<array>
-		<string></string>
-	</array>
+	<array/>
 	<key>redirectUri</key>
 	<string>urn:ietf:wg:oauth:2.0:oob</string>
 	<key>userId</key>
