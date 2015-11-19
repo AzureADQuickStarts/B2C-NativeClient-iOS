@@ -191,7 +191,6 @@
                                         clientId:appData.clientId
                                      redirectUri:redirectUri
                                       identifier:[ADUserIdentifier identifierWithId:userId type:RequiredDisplayableId]
-                                   promptBehavior:AD_CREDENTIALS_AUTO
                           completionBlock:^(ADAuthenticationResult *result) {
                               
                               if (result.status != AD_SUCCEEDED)
@@ -217,7 +216,6 @@
                                         clientId:appData.clientId
                                      redirectUri:redirectUri
                                       identifier:[ADUserIdentifier identifierWithId:userId type:RequiredDisplayableId]
-                                    promptBehavior:AD_CREDENTIALS_AUTO
                                  completionBlock:^(ADAuthenticationResult *result) {
             
             if (result.status != AD_SUCCEEDED)
