@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
-#import "NXOAuth2.h"
+#import "ADALiOS/ADAuthenticationContext.h"
 
 @interface samplesWebAPIConnector : NSObject<NSURLConnectionDataDelegate>
 

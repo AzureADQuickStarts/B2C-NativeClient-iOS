@@ -9,13 +9,15 @@
 
 
 #import "samplesWebAPIConnector.h"
+#import "ADALiOS/ADAuthenticationContext.h"
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
-#import "NXOAuth2.h"
+#import "ADALiOS/ADAuthenticationSettings.h"
 #import "NSDictionary+UrlEncoding.h"
 #import <Foundation/Foundation.h>
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
+#import "ADALiOS/ADAuthenticationResult.h"
 #import "samplesApplicationData.h"
 
 
@@ -42,6 +44,8 @@
     return context;
 }
 
+
+ADAuthenticationContext* authContext;
 bool loadedApplicationSettings;
 
 + (void) readApplicationSettings {

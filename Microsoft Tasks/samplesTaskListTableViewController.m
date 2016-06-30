@@ -10,17 +10,19 @@
 #import "samplesTaskItem.h"
 #import "sampleAddTaskItemViewController.h"
 #import "samplesWebAPIConnector.h"
+#import "ADALiOS/ADAuthenticationContext.h"
 #import "SamplesSelectUserViewController.h"
 #import <Foundation/Foundation.h>
 #import "samplesTaskItem.h"
 #import "samplesPolicyData.h"
+#import "ADALiOS/ADAuthenticationResult.h"
 #import "samplesApplicationData.h"
-#import "NXOAuth2.h"
 
 
 @interface samplesTaskListTableViewController ()
 
 @property NSMutableArray *taskItems;
+@property ADAuthenticationContext *authContext;
 @property (weak, nonatomic) IBOutlet UILabel* userLabel;
 
 @end
@@ -28,30 +30,26 @@
 @implementation samplesTaskListTableViewController
 
 -(void)loadData {
-    [super viewDidLoad];
     
+     SamplesApplicationData* appData = [SamplesApplicationData getInstance];
     
-    NXOAuth2AccountStore *store = [NXOAuth2AccountStore sharedStore];
-    NSArray *accounts = [store accountsWithAccountType:@"myGraphService"];
-    
-    if (accounts.count == 0) {
+    if (!appData.userItem.profileInfo.username) {
         
         dispatch_async(dispatch_get_main_queue(),^ {
-            
-            SamplesSelectUserViewController* userSelectController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginUserView"];
-            [self.navigationController pushViewController:userSelectController animated:YES];
+        
+        SamplesSelectUserViewController* userSelectController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginUserView"];
+        [self.navigationController pushViewController:userSelectController animated:YES];
         });
     }
-
 
     
     // Load data from the webservice
     
-    if (accounts.count > 0) {
+    if (appData.userItem) {
     [samplesWebAPIConnector getTaskList:^(NSArray *tasks, NSError* error) {
         
         
-        if (error != nil && accounts.count)
+        if (error != nil && appData.userItem)
         {
             
             UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:nil message:[[NSString alloc]initWithFormat:@"%@", error.localizedDescription] delegate:nil cancelButtonTitle:@"Retry" otherButtonTitles:@"Cancel", nil];
@@ -72,9 +70,10 @@
             // Refresh main thread since we are async
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
-                if(accounts.count)
+                if(appData.userItem &&
+                   appData.userItem.profileInfo)
                 {
-                    [self.userLabel setText:@"Hi"];
+                    [self.userLabel setText:appData.userItem.profileInfo.friendlyName];
                 }
                 else
                 {
@@ -114,17 +113,15 @@
 {
     
     SamplesApplicationData* appData = [SamplesApplicationData getInstance];
-    NXOAuth2AccountStore *store = [NXOAuth2AccountStore sharedStore];
-    NSArray *accounts = [store accountsWithAccountType:@"myGraphService"];
     
     if(appData.userItem)
     {
         [self loadData];
     }
     
-    if(accounts.count)
+    if(appData.userItem && appData.userItem.profileInfo)
     {
-        [self.userLabel setText:@"Hello"];    }
+        [self.userLabel setText:appData.userItem.profileInfo.username];    }
     else
     {
         [self.userLabel setText:@"N/A" ];

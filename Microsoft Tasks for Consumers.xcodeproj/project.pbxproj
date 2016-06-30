@@ -12,7 +12,6 @@
 		97C15AF71A280BEF004A0419 /* SamplesApplicationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C15AF61A280BEF004A0419 /* SamplesApplicationData.m */; };
 		97C15AFA1A29C9F3004A0419 /* SamplesAppSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C15AF91A29C9F3004A0419 /* SamplesAppSettingsController.m */; };
 		B81583EE1AD318CB00CCA892 /* NSDictionary+UrlEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B81583ED1AD318CB00CCA892 /* NSDictionary+UrlEncoding.m */; };
-		B85C8C4E0F3070AD35DD5A13 /* libPods-Microsoft Tasks for Consumers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B16B55E9D29C978A32C96120 /* libPods-Microsoft Tasks for Consumers.a */; };
 		B8B06D0A1AE581E900A4B04A /* samplesUserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B06D091AE581E900A4B04A /* samplesUserLoginViewController.m */; };
 		B8D009CC1ACDBD3A00C842CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8D009CB1ACDBD3A00C842CC /* InfoPlist.strings */; };
 		B8D009D21ACDC37500C842CC /* samplesPolicyData.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D009D11ACDC37500C842CC /* samplesPolicyData.m */; };
@@ -35,25 +34,23 @@
 		FB3F011618C7092700173598 /* sampleAddTaskItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F011518C7092700173598 /* sampleAddTaskItemViewController.m */; };
 		FB3F011C18C709FE00173598 /* samplesTaskListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F011B18C709FE00173598 /* samplesTaskListTableViewController.m */; };
 		FB3F011F18C713E600173598 /* samplesTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3F011E18C713E600173598 /* samplesTaskItem.m */; };
-		FB4C7C1A1BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */; };
-		FB4C7C1B1BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */; };
-		FB538F2D1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2C1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m */; };
-		FB538F301BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2F1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
-		FB538F361BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB538F351BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg */; };
-		FB538F381BA39882003ABD9A /* signin-email.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F371BA39881003ABD9A /* signin-email.png */; };
-		FB538F3A1BA39887003ABD9A /* signin-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F391BA39887003ABD9A /* signin-fb.png */; };
+		FB4C7C1A1BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C181BA08A66003B93C5 /* ADAL_iPhone_Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		FB4C7C1B1BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C7C191BA08A66003B93C5 /* ADAL_iPad_Storyboard.storyboard */; settings = {ASSET_TAGS = (); }; };
+		FB538F2D1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2C1BA36653003ABD9A /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		FB538F301BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB538F2F1BA36875003ABD9A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		FB538F361BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB538F351BA38E63003ABD9A /* 10637393134_3be20f8467_k.jpg */; settings = {ASSET_TAGS = (); }; };
+		FB538F381BA39882003ABD9A /* signin-email.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F371BA39881003ABD9A /* signin-email.png */; settings = {ASSET_TAGS = (); }; };
+		FB538F3A1BA39887003ABD9A /* signin-fb.png in Resources */ = {isa = PBXBuildFile; fileRef = FB538F391BA39887003ABD9A /* signin-fb.png */; settings = {ASSET_TAGS = (); }; };
 		FB6ABBF91B9E807500AF7868 /* libADALiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6ABBF81B9E807500AF7868 /* libADALiOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		96433205324FCAF5A481BD40 /* Pods-Microsoft Tasks for Consumers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Microsoft Tasks for Consumers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Microsoft Tasks for Consumers/Pods-Microsoft Tasks for Consumers.debug.xcconfig"; sourceTree = "<group>"; };
 		971963C41A6845950026BC5F /* Microsoft Tasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Microsoft Tasks.entitlements"; sourceTree = "<group>"; };
 		97C15AF01A27FAD6004A0419 /* SamplesSelectUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SamplesSelectUserViewController.h; sourceTree = "<group>"; };
 		97C15AF31A27FDF0004A0419 /* SamplesSelectUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesSelectUserViewController.m; sourceTree = "<group>"; };
 		97C15AF61A280BEF004A0419 /* SamplesApplicationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesApplicationData.m; sourceTree = "<group>"; };
 		97C15AF81A29C9E3004A0419 /* SamplesAppSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplesAppSettingsController.h; sourceTree = "<group>"; };
 		97C15AF91A29C9F3004A0419 /* SamplesAppSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplesAppSettingsController.m; sourceTree = "<group>"; };
-		B16B55E9D29C978A32C96120 /* libPods-Microsoft Tasks for Consumers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Microsoft Tasks for Consumers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A5BFA2C1AAB67EB1A5358D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B81583EC1AD318CB00CCA892 /* NSDictionary+UrlEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+UrlEncoding.h"; sourceTree = "<group>"; };
 		B81583ED1AD318CB00CCA892 /* NSDictionary+UrlEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+UrlEncoding.m"; sourceTree = "<group>"; };
@@ -73,7 +70,6 @@
 		B8D00A1D1ACE4DF800C842CC /* samplesUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplesUseViewController.h; sourceTree = "<group>"; };
 		B8D00A1E1ACE4DF800C842CC /* samplesUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = samplesUseViewController.m; sourceTree = "<group>"; };
 		BE1BE405644A406563C93532 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CD3A1E7903044ED9B1D16952 /* Pods-Microsoft Tasks for Consumers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Microsoft Tasks for Consumers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Microsoft Tasks for Consumers/Pods-Microsoft Tasks for Consumers.release.xcconfig"; sourceTree = "<group>"; };
 		F38096135D57D9DDDF18D89C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB33714818CA5B7E00234804 /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 		FB3BF21E18D0106C007E645E /* samplesWebAPIConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = samplesWebAPIConnector.h; sourceTree = "<group>"; };
@@ -122,7 +118,6 @@
 				FB3F00DE18C7016200173598 /* UIKit.framework in Frameworks */,
 				FB3F00DA18C7016200173598 /* Foundation.framework in Frameworks */,
 				7C830F7926DA8D3AF9CB99C6 /* libPods.a in Frameworks */,
-				B85C8C4E0F3070AD35DD5A13 /* libPods-Microsoft Tasks for Consumers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +129,6 @@
 			children = (
 				B2A5BFA2C1AAB67EB1A5358D /* Pods.debug.xcconfig */,
 				BE1BE405644A406563C93532 /* Pods.release.xcconfig */,
-				96433205324FCAF5A481BD40 /* Pods-Microsoft Tasks for Consumers.debug.xcconfig */,
-				CD3A1E7903044ED9B1D16952 /* Pods-Microsoft Tasks for Consumers.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -168,7 +161,6 @@
 				FB3F00DF18C7016200173598 /* CoreData.framework */,
 				FB3F00F718C7016200173598 /* XCTest.framework */,
 				F38096135D57D9DDDF18D89C /* libPods.a */,
-				B16B55E9D29C978A32C96120 /* libPods-Microsoft Tasks for Consumers.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,12 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3F010818C7016200173598 /* Build configuration list for PBXNativeTarget "Microsoft Tasks for Consumers" */;
 			buildPhases = (
-				82DDE857AAEB726A91F72F51 /* 📦 Check Pods Manifest.lock */,
+				82DDE857AAEB726A91F72F51 /* Check Pods Manifest.lock */,
 				FB3F00D218C7016200173598 /* Sources */,
 				FB3F00D318C7016200173598 /* Frameworks */,
 				FB3F00D418C7016200173598 /* Resources */,
-				ED533F1F38E6393755CBBBA7 /* 📦 Copy Pods Resources */,
-				6984FEB55E66BE2339BC0987 /* 📦 Embed Pods Frameworks */,
+				ED533F1F38E6393755CBBBA7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,29 +319,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6984FEB55E66BE2339BC0987 /* 📦 Embed Pods Frameworks */ = {
+		82DDE857AAEB726A91F72F51 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Microsoft Tasks for Consumers/Pods-Microsoft Tasks for Consumers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82DDE857AAEB726A91F72F51 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,19 +334,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		ED533F1F38E6393755CBBBA7 /* 📦 Copy Pods Resources */ = {
+		ED533F1F38E6393755CBBBA7 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Microsoft Tasks for Consumers/Pods-Microsoft Tasks for Consumers-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -478,7 +454,7 @@
 		};
 		FB3F010918C7016200173598 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96433205324FCAF5A481BD40 /* Pods-Microsoft Tasks for Consumers.debug.xcconfig */;
+			baseConfigurationReference = B2A5BFA2C1AAB67EB1A5358D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -509,7 +485,7 @@
 		};
 		FB3F010A18C7016200173598 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD3A1E7903044ED9B1D16952 /* Pods-Microsoft Tasks for Consumers.release.xcconfig */;
+			baseConfigurationReference = BE1BE405644A406563C93532 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
