@@ -66,7 +66,7 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
     SamplesApplicationData* data = [SamplesApplicationData getInstance];
    // NSString *userId = [[NSString alloc]init];
     if(data.userItem){
-        completionBlock(data.userItem.accessToken, nil);
+        completionBlock(data.userItem.token, nil);
         return;
     }
     
@@ -108,7 +108,7 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
         else
         {
             data.userItem = result.tokenCacheStoreItem;
-            completionBlock(result.tokenCacheStoreItem.accessToken, nil);
+            completionBlock(result.tokenCacheStoreItem.token, nil);
         }
     }];
 }
@@ -153,7 +153,7 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
                               else
                               {
                                   data.userItem = result.tokenCacheStoreItem;
-                                  completionBlock(result.tokenCacheStoreItem.accessToken, nil);
+                                  completionBlock(result.tokenCacheStoreItem.token, nil);
                               }
                           }];
 }
@@ -195,7 +195,7 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
                               else
                               {
                                   data.userItem = result.tokenCacheStoreItem;
-                                  completionBlock(result.tokenCacheStoreItem.accessToken, nil);
+                                  completionBlock(result.tokenCacheStoreItem.token, nil);
                               }
                           }];
 }
