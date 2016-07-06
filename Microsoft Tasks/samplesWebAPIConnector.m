@@ -245,7 +245,6 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
 
 +(void) getClaimsWithPolicyClearingCache  : (BOOL) clearCache
                            policy:(samplesPolicyData *)policy
-                           params:(NSDictionary*) params
                            parent:(UIViewController*) parent
                 completionHandler:(void (^) (ADProfileInfo*, NSError*))completionBlock;
 {
@@ -270,7 +269,7 @@ completionHandler:(void (^) (NSString*, NSError*))completionBlock;
                            redirectUri:redirectUri
                             identifier:[ADUserIdentifier identifierWithId:data.userItem.profileInfo.username type:RequiredDisplayableId]
                             promptBehavior:AD_PROMPT_ALWAYS
-                  extraQueryParameters: params.urlEncodedString
+                  extraQueryParameters: nil
                                 policy: policy.policyID
                        completionBlock:^(ADAuthenticationResult *result) {
                            
@@ -451,9 +450,8 @@ completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionB
 
         [self readApplicationSettings];
     
-    NSDictionary* params = [self convertPolicyToDictionary:policy];
     
-    [self getClaimsWithPolicyClearingCache:NO policy:policy params:params parent:parent completionHandler:^(ADProfileInfo* userInfo, NSError* error) {
+    [self getClaimsWithPolicyClearingCache:NO policy:policy parent:parent completionHandler:^(ADProfileInfo* userInfo, NSError* error) {
         
         if (userInfo == nil)
         {
@@ -507,20 +505,6 @@ completionBlock:(void (^) (ADProfileInfo* userInfo, NSError* error)) completionB
     return dictionary;
 }
 
-+(NSDictionary*) convertPolicyToDictionary:(samplesPolicyData*)policy
-{
-    NSMutableDictionary* dictionary = [[NSMutableDictionary alloc]init];
-
-    
-    if (policy.policyID){
-        [dictionary setValue:policy.policyID forKey:@"p"];
-       // [dictionary setValue:@"openid" forKey:@"scope"];
-       // [dictionary setValue:UUID forKey:@"nonce"];
-      //  [dictionary setValue:@"query" forKey:@"response_mode"];
-    }
-    
-    return dictionary;
-}
 
 +(void) signOut
 {

@@ -16,22 +16,9 @@
 #import "ADALiOS/ADAuthenticationResult.h"
 #import "samplesApplicationData.h"
 
-
-@interface samplesUserLoginViewController ()
-
-
-@end
-
 @implementation samplesUserLoginViewController
 
 - (void)viewDidLoad {
-    
-    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"10637393134_3be20f8467_k.jpg"]];
-    
-    [self.view addSubview:backgroundImage];
-    [self.view sendSubviewToBack:backgroundImage];
-    
-    
     [super viewDidLoad];
     
 }

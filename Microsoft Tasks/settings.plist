@@ -3,29 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>authority</key>
-	<string>https://login.microsoftonline.com/hypercubeb2c.onmicrosoft.com/</string>
+	<string>https://login.microsoftonline.com/kidventusb2c.onmicrosoft.com/</string>
 	<key>clientId</key>
-	<string>7bf688ce-8139-4ca8-9391-02fdb6f86d67</string>
+	<string>1fa27018-1a49-4521-851d-76004cb66ad8</string>
 	<key>scopes</key>
 	<array>
-		<string>7bf688ce-8139-4ca8-9391-02fdb6f86d67</string>
+		<string>1fa27018-1a49-4521-851d-76004cb66ad8</string>
 	</array>
 	<key>additionalScopes</key>
-	<array>
-		<string></string>
-	</array>
+	<array/>
 	<key>redirectUri</key>
 	<string>urn:ietf:wg:oauth:2.0:oob</string>
 	<key>userId</key>
-	<string>test@hypercubeb2c.onmicrosoft.com</string>
+	<string>bwerner@kidventus.net</string>
 	<key>taskWebAPI</key>
 	<string>https://kidventus.net/todoserver/tasks</string>
 	<key>emailSignUpPolicyId</key>
-	<string>B2C_1_todo_email_signup</string>
+	<string>B2C_1_test_signup</string>
 	<key>faceBookSignInPolicyId</key>
-	<string>B2C_1_todo_facebook_signin</string>
+	<string>B2C_1_test_facebook_signin</string>
 	<key>emailSignInPolicyId</key>
-	<string>B2C_1_todo_email_signin</string>
+	<string>B2C_1_test_signin</string>
 	<key>fullScreen</key>
 	<false/>
 	<key>showClaims</key>

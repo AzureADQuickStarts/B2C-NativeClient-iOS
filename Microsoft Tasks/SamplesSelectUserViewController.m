@@ -187,11 +187,12 @@
     if(!userItem){
     
     NSURL *redirectUri = [[NSURL alloc]initWithString:appData.redirectUriString];
-        [authContext acquireTokenSilentWithScopes:appData.scopes
-                                        clientId:appData.clientId
+        [authContext acquireTokenWithScopes:appData.scopes
+                                 additionalScopes:nil
+                                         clientId:appData.clientId
                                      redirectUri:redirectUri
                                       identifier:[ADUserIdentifier identifierWithId:userId type:RequiredDisplayableId]
-                                   promptBehavior:AD_CREDENTIALS_AUTO
+                                   promptBehavior:AD_PROMPT_AUTO
                           completionBlock:^(ADAuthenticationResult *result) {
                               
                               if (result.status != AD_SUCCEEDED)
@@ -213,11 +214,12 @@
                           }];
     } else {
         
-        [authContext acquireTokenSilentWithScopes:appData.scopes
-                                        clientId:appData.clientId
+        [authContext acquireTokenWithScopes:appData.scopes
+                                 additionalScopes: nil
+                                         clientId:appData.clientId
                                      redirectUri:redirectUri
                                       identifier:[ADUserIdentifier identifierWithId:userId type:RequiredDisplayableId]
-                                    promptBehavior:AD_CREDENTIALS_AUTO
+                                    promptBehavior:AD_PROMPT_AUTO
                                  completionBlock:^(ADAuthenticationResult *result) {
             
             if (result.status != AD_SUCCEEDED)
